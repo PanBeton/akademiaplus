@@ -1,0 +1,239 @@
+/* Ustawienie koloru nawigacji */
+.navbar {
+    background-color: #0047AB !important;
+    padding: 20px;
+    height: 120px;
+}
+
+/* Kolor linków nawigacji */
+.nav-link {
+    color: #fff !important;
+}
+
+/* Styl aktywnego linku */
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hamburger menu ikona */
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28%255, %255, %255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Styl dla logo */
+
+.navbar-brand h1 {
+    text-shadow: 0px 6px 3px rgba(0,0,0,0.4) !important;
+}
+
+.plus {
+    color: #FFB300;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.l {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  color: white;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+/* Styl dla banera */
+.banner {
+     background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url('auto.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 120px);
+    color: white;
+    position: relative;
+}
+
+/* Styl tekstu na banerze */
+.banner h1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styl dla przycisku */
+.banner .btn {
+    background-color: white;
+    color: #0047AB;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Styl dla sekcji z informacjami */
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0047AB; /* Dopasowany kolor */
+}
+
+.card {
+    transition: transform 0.2s; /* Animacja powiększenia */
+    border-radius: 0.5rem; /* Zaokrąglenie krawędzi */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+.card-body ul {
+    list-style-type: none; /* Usunięcie punktów z listy */
+    padding-left: 0;
+}
+
+/* Sekcja kontakt */
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0047AB; /* Dopasowany kolor */
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.map-container {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Dodano zaokrąglenie */
+}
+
+.map-container iframe {
+    border-radius: 0.5rem; /* Dodatkowe zaokrąglenie mapy */
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #0047AB; /* Kolor ikony */
+    font-size: 1.5rem; /* Rozmiar ikony */
+}
+
+.social-icon:hover {
+    color: #1DA1F2; /* Kolor podczas najechania */
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    color: #FFB300;
+}
+
+
+/* Stopka */
+
+.footer {
+    background-color: #0047AB; /* Kolor tła stopki */
+    color: white; /* Kolor tekstu */
+    padding: 1.5rem 0; /* Padding górny i dolny */
+}
+
+.footer a {
+    color: #FFB300;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #e09b00;
+    text-decoration: underline;
+}
+
+.footer h5 {
+    color: #FFB300;
+}
+
+
+/* Stylowanie tła po rozwinięciu na małych ekranach */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #0047AB;
+    }
+
+    /* Zmniejszenie wysokości nawigacji na mniejszych ekranach */
+    .navbar {
+        padding: 10px;
+        height: auto;
+    }
+    
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Dodatkowe stylowanie rozwiniętej nawigacji */
+.navbar-collapse.collapse.show {
+    height: auto !important;
+}
+
+/* Ustawienie większej odległości między linkami na mobilnych urządzeniach */
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 250px;
+    }
+    .banner h1 {
+        font-size: 1.2rem;
+    }
+}
